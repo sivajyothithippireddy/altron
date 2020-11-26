@@ -1,0 +1,48 @@
+{
+  "emaillist": [
+    {
+      "id": 1,
+      "emailName": "Email1@gmail.com"
+    },
+    {
+      "emailName": "Email2@gmail.com",
+      "id": 2
+    },
+    {
+      "emailName": "Email3@gmail.com",
+      "id": 2
+    },
+    {
+      "emailName": "Email4@gmail.com",
+      "id": 2
+    },
+    {
+      "emailName": "Email5@gmail.com",
+      "id": 2
+    },
+    {
+      "emailName": "Email6@gmail.com",
+      "id": 2
+    },
+    {
+      "emailName": "Email7@gmail.com",
+      "id": 2
+    },
+    {
+      "emailName": "Email8@gmail.com",
+      "id": 2
+    },
+    {
+      "emailName": "Email9@gmail.com",
+      "id": 2
+    },
+    {
+      "emailName": "Email10@gmail.com",
+      "id": 2
+    },
+    {
+      "emailName": "Email1@gmail.com",
+      "id": 2
+    }
+  ]
+}
