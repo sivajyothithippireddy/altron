@@ -1,29 +1,52 @@
-<div class="container">
-  <div class="row">
-      <div class="col-sm-4 " >
-          <div class="card">
-              <div class="card-body bgcolor">
-                  <h5 class="card-title">Email List</h5>
-                  <section>
-                      <input type="checkbox" (change)="selectAll($event)"> Select All
-                      <div *ngFor="let d of data">
-                          <p class="card-text">
-                              <input type="checkbox" (change)="singleSelect($event,d)" [checked]="d.flag"> {{d.emailName}}</p>
-                      </div>
-                  </section>
-                  <button type="button" class="btn btn-primary mt-3 ml-5" (click)="savedmails()">Add Emails</button>
-              </div>
-          </div>
-      </div>
-      <div class="col-sm-4">
-          <div class="card">
-              <div class="card-body bgcolor">
-                  <h5 class="card-title">Selected Emails</h5>
-                  <div *ngFor="let e of selectedemails">
-                  <p class="card-text">{{e.emailName}}</p>
-              </div>
-              </div>
-          </div>
-      </div>
-  </div>
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-sm-4 ">
+            <div class="card">
+                <div class="card-body bgcolor">
+                    <h5 class="card-title">Email List</h5>
+                    <section>
+                        <input type="checkbox" (change)="selectAll($event)"> Select All
+                        <div *ngFor="let d of data">
+                            <p class="card-text">
+                                <input type="checkbox" (change)="singleSelect($event,d)" [checked]="d.flag">
+                                {{d.emailName}}</p>
+                        </div>
+                    </section>
+                    <button type="button" class="btn btn-primary mt-3 ml-5" (click)="savedmails()">Add Emails</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body bgcolor">
+                    <h5 class="card-title">Selected Emails</h5>
+                    <div *ngFor="let e of selectedemails">
+                        <p class="card-text">{{e.emailName}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Country's along with States</h5>
+            <div class="row">
+                <div class="col-3">
+                    <select (change)="selectedCountry($event.target.value)">
+                        <option value="">Select Country</option>
+                        <option *ngFor="let c of countryjsondata" value="{{c.id}}">{{c.countryName}}</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <select>
+                        <option value="">Select state</option>
+                        <option *ngFor="let d of state">{{d.stateName}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

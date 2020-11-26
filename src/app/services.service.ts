@@ -11,4 +11,7 @@ export class ServicesService {
   getData() {
    return this.http.get("http://localhost:3000/emaillist");
   }
+  getDropdownData(){
+    return this.http.get("http://localhost:3000/countrydata")
+  }
 }

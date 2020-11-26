@@ -44,5 +44,50 @@
       "emailName": "Email1@gmail.com",
       "id": 2
     }
+  ],
+  "countrydata": [
+    {
+      "id": 1,
+      "countryName": "India",
+      "statedata": [
+        {
+          "id1": 1,
+          "stateName": "Ap"
+        },
+        {
+          "id1": 2,
+          "stateName": "Telangana"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "countryName": "chennai",
+      "statedata": [
+        {
+          "id1": 1,
+          "stateName": "Banglore"
+        },
+        {
+          "id1": 2,
+          "stateName": "kerala"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "countryName": "orissa",
+      "statedata": [
+        {
+          "id1": 1,
+          "stateName": "maharastra"
+        },
+        {
+          "id1": 2,
+          "stateName": "kerala"
+        }
+      ]
+    }
   ]
+
 }

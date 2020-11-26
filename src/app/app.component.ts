@@ -14,9 +14,14 @@ export class AppComponent implements OnInit {
   data;
   count = 0;
   checkedobj1: any;
+  optionData: any;
+  countryjsondata: any;
+  checkedobj2: any;
+  state: any;
   constructor(private ser: ServicesService) { }
   ngOnInit() {
     this.data1();
+    this.getcountrys();
   }
 
   data1() {
@@ -62,4 +67,23 @@ export class AppComponent implements OnInit {
     }
   }
 
+  // dropdownData(){
+  //   this.ser.getDropdownData().subscribe(res =>{
+  //     this.optionData=res;
+  //   })
+  // }
+  getcountrys() {
+    this.ser.getDropdownData().subscribe(resp => {
+      this.countryjsondata = resp;
+    });
+  }
+  selectedCountry(event) {
+    this.checkedobj2 = event;
+    for (let i = 0; i <= this.countryjsondata.length; i++) {
+      if (this.countryjsondata[i].id == event) {
+        this.state = this.countryjsondata[i].statedata;
+        break;
+      }
+    }
+  }
 }
